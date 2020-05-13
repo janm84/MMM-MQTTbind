@@ -11,17 +11,17 @@ How it's working:
 
 The module MMM-MQTTbind represents the bindin between MQTT-Topics and Magicmirror Notifications. 
 
-#####MQTT to Magicmirror Notification:
+##### MQTT to Magicmirror Notification:
 If the client receives messages from the MQTT-Broker for a subscribed Topic, it forwards them to the configured Magicmirror Notification. e.g:
 
 Topic: "home/livingroom/bulb1/cmnd/power" Message: "ON" -> Notification: "MY_NOTIFICATION" Payload "ON".
 
-#####Magicmirror Notification to MQTT
+##### Magicmirror Notification to MQTT
 If a publish is configured, MMM-MQTTbind will publish the received Notification and it's payload to an configured MQTT-Topic. e.g.:
 
 "MY_NOTIFICATION" Payload "ON" will be forwarded as MQTT Message to Topic: "home/livingroom/bulb1/stat/power
 
-#####Configuration:
+##### Configuration:
 
 		{
 			module: 'MMM-MQTTbind',
