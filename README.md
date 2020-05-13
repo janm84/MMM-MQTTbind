@@ -1,6 +1,6 @@
 # MMM-MQTTbind
 
-This is a Magicmirror2 module for communication with a MQTT broker. 
+This is a Magicmirror2 module for communication with a MQTT broker, inspired by MMM-MQTTbridge (https://github.com/sergge1/MMM-MQTTbridge)
 
 With this module you are able to use the most important features of MQTT, like retained flags, QoS, clean connections, etc.
 The client is based on the mqtt.js library from NodeJS, so for explanation or extension of the configuration you can always read on https://www.npmjs.com/package/mqtt to receive more details.
