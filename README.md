@@ -1,5 +1,19 @@
 # MMM-MQTTbind
 
+This is a Magicmirror2 module for communication with a MQTT broker. 
+
+With this module you are able to use the most important features of MQTT, like retained flags, QoS, clean connections, etc.
+The client is based on the mqtt.js library from NodeJS, so for explanation or extension of the configuration you can always read on https://www.npmjs.com/package/mqtt to receive more details.
+
+How it's working:
+
+The MMM-MQTTbind is the binding between MQTT-Topics and Magicmirror Notifications. 
+
+MQTT to Magicmirror:
+If the client receives messages from the MQTT for a subscribed Topic, it forwards them to the configured Magicmirror Notification. e.g:
+
+Topic: "home/livingromm/bulb1" Message: ON it will foward it as Notification: "MY_NOTIFICATION" Payload "ON
+
 
 Configuration:
 
