@@ -7,6 +7,8 @@ The client is based on the mqtt.js library from NodeJS, so for explanation or ex
 
 How it's working:
 
+![alt-text](https://github.com/janm84/MMM-MQTTbind/blob/master/gitthub/MQTTbind.png)
+
 The MMM-MQTTbind is the binding between MQTT-Topics and Magicmirror Notifications. 
 
 MQTT to Magicmirror:
