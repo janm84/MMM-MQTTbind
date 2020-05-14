@@ -1,0 +1,26 @@
+{
+  "name": "MMM-MQTTbind",
+  "version": "1.0.0",
+  "description": "MQTTbind is providing MQTT bindings for Magicmirror2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janm84/MMM-MQTTbind.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "MQTT"
+  ],
+  "author": "janm84",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janm84/MMM-MQTTbind/issues"
+  },
+  "homepage": "https://github.com/janm84/MMM-MQTTbind#readme",
+  "dependencies": {
+    "mqtt": "^1.10.0"
+  }
+}
