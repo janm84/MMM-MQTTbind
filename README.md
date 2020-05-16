@@ -29,7 +29,7 @@ If a publish is configured, MMM-MQTTbind will publish the received Notification 
 			config: {
 				enableLogging: true,   // If true every publish and subscription will get logged with the payload
 				server: "mqtt://192.168.0.1:1883", //See mqtt.client.connect() for more details
-				options: { ],				},
+				options: {},
 				ignoredNotifications: ["CLOCK_MINUTE", "CLOCK_SECOND", "NEWS_FEED"],
 				ignoredSenders: ["NEWS_FEED", "calender", "MMM-GoogleTasks", "MMM-OpenmapWeather", "weatherforecast"],
 				bindings: {
