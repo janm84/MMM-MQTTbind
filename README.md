@@ -21,6 +21,12 @@ If a publish is configured, MMM-MQTTbind will publish the received Notification 
 
 "MY_NOTIFICATION" Payload "ON" will be forwarded as MQTT Message to Topic: "home/livingroom/bulb1/stat/power
 
+#### Installation:
+
+git clone https://github.com/janm84/MMM-MQTTbind
+
+Maybe you need to install mqtt.js too: npm install mqtt
+
 #### Minimalistic Configuration:
 
 		{
@@ -121,4 +127,5 @@ If a publish is configured, MMM-MQTTbind will publish the received Notification 
 					],					
 				},
 			},
+
 
