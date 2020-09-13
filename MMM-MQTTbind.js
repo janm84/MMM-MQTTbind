@@ -94,7 +94,7 @@ Module.register("MMM-MQTTbind", {
 
         // If false the client is not connected and the received notification gets queued.
         if(this.loaded = true) {
-          this.sendSocketNotification("MQTT_MESSAGE_SEND", { 'binding': this.config.bindings.publications[i], 'message': payload });
+          this.safeSendNotification(this.config.bindings.publications[i], payload);
         } else {
           // Notifications in eine queue schreiben um sie nach dem connect abzuarbeiten.
           this.startupQueue.push({ 'notification': notification, 'payload': payload });
@@ -103,6 +103,13 @@ Module.register("MMM-MQTTbind", {
         break;
       }
     }
+  },
+
+  safeSendNotification : function (binding, message) {
+    if (typeof(message) !== "string") {
+      message = JSON.stringify(message);
+    }
+    this.sendSocketNotification("MQTT_MESSAGE_SEND", { 'binding': binding, 'message': message });
   },
 
   // Logging to pm2 logfile instead of browser console
